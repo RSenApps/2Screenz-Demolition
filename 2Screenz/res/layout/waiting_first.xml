@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/waiting_first"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View android:layout_width="match_parent" android:layout_height="3dp" android:layout_centerVertical="true" android:background="@android:color/holo_blue_bright"/>
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingRight="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/n5" />
+	<ImageView android:layout_width="100dp" android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/ImageView01"
+	    android:id="@+id/check"
+	    android:layout_alignTop="@id/ImageView01"
+	    android:layout_alignBottom="@id/ImageView01"
+	    android:src="@drawable/check"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="100dp"
+        android:alpha=".6"
+        android:src="@drawable/n5" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:text="Place On Left"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="Tap When Ready"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ImageView01"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_above="@id/ImageView01"
+        android:text="You"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
